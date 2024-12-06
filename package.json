@@ -5,7 +5,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "bun run --watch src/index.ts",
-		"build": "bun build --compile --minify-whitespace --minify-syntax --target node ./src/index.ts"
+    "build": "echo 'No build step needed'"
 	},
 	"dependencies": {
 		"@vercel/node": "^3.2.28",

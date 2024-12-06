@@ -3,7 +3,11 @@
 	"builds": [
 		{
 			"src": "src/index.ts",
-			"use": "@vercel/node@latest"
+			"use": "@vercel/node@latest",
+			"config": {
+				"maxLambdaSize": "50mb",
+				"runtime": "nodejs20.x"
+			}
 		}
 	],
 	"routes": [
