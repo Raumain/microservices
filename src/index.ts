@@ -8,10 +8,10 @@ const app = new Elysia()
 		return { message: "API is working on Vercel" };
 	});
 
-// Vercel-specific export
-export default app.handle;
+// Explicit handler for Vercel
+export const handler = async (req: Request) => {
+	return await app.handle(req);
+};
 
-// Local development
-if (import.meta.main) {
-	app.listen(3000);
-}
+// For local development
+export default app;
