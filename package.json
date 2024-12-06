@@ -1,33 +1,15 @@
 {
-	"name": "express-typescript-server",
-	"version": "1.0.0",
-	"description": "A basic Express server with TypeScript",
-	"main": "dist/server.js",
-	"scripts": {
-		"start": "node dist/server.js",
-		"dev": "tsx --watch src/server.ts",
-		"build": "tsc",
-		"lint": "eslint . --ext .ts",
-		"lint:fix": "eslint . --ext .ts --fix",
-		"test": "jest"
-	},
-	"author": "Your Name",
-	"license": "ISC",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"express": "^4.18.2",
-		"tsx": "^4.19.2"
-	},
-	"devDependencies": {
-		"@types/cors": "^2.8.13",
-		"@types/express": "^4.17.17",
-		"@types/node": "^20.4.2",
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
-		"eslint": "^8.44.0",
-		"typescript": "^5.1.6"
-	},
-	"engines": {
-		"node": ">=16.0.0"
-	}
+  "name": "microservices",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
 }
